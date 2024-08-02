@@ -17,7 +17,7 @@
     <!-- 项目属性 -->
     <properties>
         <!-- 默认主程序 -->
-        <start-class>local.kongyu.flink.FlinkStandaloneApplication</start-class>
+        <start-class>local.kongyu.flink.FlinkClusterApplication</start-class>
         <java.version>8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -46,10 +46,10 @@
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-starter-tomcat</artifactId>
                 </exclusion>
-                <!--<exclusion>
+                <exclusion>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-starter-logging</artifactId>
-                </exclusion>-->
+                </exclusion>
             </exclusions>
         </dependency>
         <!-- 使用log4j2作为日志实现 -->
@@ -292,23 +292,23 @@
                                 <exclude>META-INF/*.MF</exclude>
                                 <exclude>META-INF/*.DSA</exclude>
                                 <exclude>META-INF/*.RSA</exclude>
-                                <exclude>**/Log4j2Plugins.dat</exclude>
                                 <!--<exclude>META-INF/*.txt</exclude>
                                 <exclude>META-INF/NOTICE</exclude>
                                 <exclude>META-INF/LICENSE</exclude>
                                 <exclude>META-INF/services/java.sql.Driver</exclude>
+                                <exclude>**/Log4j2Plugins.dat</exclude>
                                 -->
                                 <!-- 排除resources下的xml配置文件 -->
-                                <exclude>log*.xml</exclude>
+                                <!--<exclude>log*.xml</exclude>-->
                             </excludes>
                         </filter>
                     </filters>
                     <artifactSet>
                         <!-- 排除依赖项 -->
-                        <excludes>
+                        <!--<excludes>
                             <exclude>org.apache.logging.log4j:*</exclude>
                             <exclude>org.slf4j:*</exclude>
-                        </excludes>
+                        </excludes>-->
                     </artifactSet>
                 </configuration>
                 <dependencies>

@@ -24,7 +24,7 @@ public class MySparkSchedule {
     /**
      * 定时运行Spark任务
      */
-    @Scheduled(cron = "0 0 * * * ?")
+    @Scheduled(cron = "0 * * * * ?")
     public void runSparkJob() {
         log.info("Spark任务开始运行");
         mySparkCoreTask.run();

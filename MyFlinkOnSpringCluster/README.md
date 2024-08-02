@@ -7,8 +7,8 @@
 **运行应用**
 
 ```
-flink run flink-spring-1.0.jar \
-    --class=local.kongyu.flink.task.sql.DatagenTumbleWindow \
+flink run MyFlinkOnSpringCluster-1.0.jar \
+    --class=local.kongyu.flink.task.sql.DatagenToKafka \
     --method=run
 ```
 
@@ -23,8 +23,8 @@ flink run-application -t yarn-application \
     -Djobmanager.memory.process.size=2GB \
     -Dtaskmanager.memory.process.size=4GB \
     -Dyarn.application.name="生成数据并计算窗口" \
-    flink-spring-1.0.jar \
-    --class=local.kongyu.flink.task.sql.DatagenTumbleWindow \
+    MyFlinkOnSpringCluster-1.0.jar \
+    --class=local.kongyu.flink.task.sql.DatagenToKafka \
     --method=run
 ```
 

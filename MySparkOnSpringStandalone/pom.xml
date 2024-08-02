@@ -16,7 +16,7 @@
     <!-- 项目属性 -->
     <properties>
         <!-- 默认主程序 -->
-        <start-class>local.kongyu.spark.SparkClusterApplication</start-class>
+        <start-class>local.kongyu.spark.SparkStandaloneApplication</start-class>
         <java.version>8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
