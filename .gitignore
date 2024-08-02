@@ -25,8 +25,9 @@
 !*Dockerfile*
 !*.java
 !*.xml
+!*.config
 !banner.txt
- 
+
 #忽略根目录下的文件
 /temp/
 /logs/

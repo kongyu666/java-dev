@@ -21,9 +21,35 @@
         <module>MyFastjson2</module>
         <module>MyFlinkOnSpringStandalone</module>
         <module>MyFlinkOnSpringCluster</module>
+        <module>MySpark</module>
         <module>MySparkOnSpringCluster</module>
         <module>MySparkOnSpringK8SOperator</module>
         <module>MySparkOnSpringStandalone</module>
+        <module>MySpringForest</module>
+        <module>MySpringBootAdmin</module>
+        <module>MySaToken</module>
+        <module>MyPowerJob</module>
+        <module>MyRedisTemplate</module>
+        <module>MyEasyExcel</module>
+        <module>MyJavaStream</module>
+        <module>MySpringSse</module>
+        <module>MySpringNetty</module>
+        <module>MySpringStomp</module>
+        <module>MySpringWebsocket</module>
+        <module>MyGracefulResponse</module>
+        <module>MySpringAopLog</module>
+        <module>MySpringBootAdminClient</module>
+        <module>MySpringFileStorage</module>
+        <module>MyGraalVMDemo</module>
+        <module>MyHutool</module>
+        <module>MySpringboot2</module>
+        <module>MySpringBoot3Admin</module>
+        <module>MySpringMapStructPlus</module>
+        <module>MyEasyPoi</module>
+        <module>MyMybatisFlex</module>
+        <module>MyMybatisFlexPostGis</module>
+        <module>MyFlink</module>
+        <module>MySpringCloud</module>
     </modules>
 
 </project>
