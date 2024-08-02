@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!-- 项目模型版本 -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 项目坐标 -->
+    <groupId>local.ateng</groupId>
+    <artifactId>dev</artifactId>
+    <version>1.0</version>
+    <name>Java_Dev</name>
+    <description>
+        Java开发
+    </description>
+
+    <!-- 打包方式为 POM，表示该项目为聚合项目 -->
+    <packaging>pom</packaging>
+    <!-- 项目包含的子模块 -->
+    <modules>
+        <module>MySpringboot3</module>
+        <module>MyFastjson2</module>
+        <module>MyFlinkOnSpringStandalone</module>
+        <module>MyFlinkOnSpringCluster</module>
+        <module>MySparkOnSpringCluster</module>
+        <module>MySparkOnSpringK8SOperator</module>
+        <module>MySparkOnSpringStandalone</module>
+    </modules>
+
+</project>
