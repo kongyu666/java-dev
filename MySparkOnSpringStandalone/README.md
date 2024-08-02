@@ -1,4 +1,4 @@
-# Java8 和 Spark  SpringBoot2
+# Java8 和 Spark3.5  SpringBoot2.7
 
 ## 打包运行Spark On Spring
 
