@@ -49,6 +49,7 @@
         <module>MyMybatisFlex</module>
         <module>MyMybatisFlexPostGis</module>
         <module>MySpringCloud</module>
+        <module>MySpringKafka</module>
     </modules>
 
 </project>
