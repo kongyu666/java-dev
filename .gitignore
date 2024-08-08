@@ -21,6 +21,7 @@
 !*.md
 !*.yaml
 !*.yml
+!*.properties
 !*.sh
 !*Dockerfile*
 !*.java
