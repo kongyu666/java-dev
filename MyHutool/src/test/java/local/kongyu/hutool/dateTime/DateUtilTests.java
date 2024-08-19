@@ -326,8 +326,11 @@ public class DateUtilTests {
         // 今日时间
         DateTime startTime2 = DateUtil.parse("2024-02-01 00:00:00");
         DateTime endTime2 = DateUtil.parse("2024-02-02 00:00:00");
-        List<String> dateTimes2 = DateUtil.rangeFunc(startTime2, endTime2,DateField.HOUR_OF_DAY, time -> DateUtil.format(time, "HH:00"));
+        List<String> dateTimes2 = DateUtil.rangeFunc(startTime2, endTime2, DateField.HOUR_OF_DAY, time -> DateUtil.format(time, "HH:00"));
         System.out.println(dateTimes2);
+        // 近7月日期
+        List<String> dateTimes3 = DateUtil.rangeFunc(DateUtil.offsetMonth(DateUtil.date(), -7), DateUtil.offsetMonth(DateUtil.date(), -1), DateField.MONTH, time -> DateUtil.format(time, "yyyy年MM月"));
+        System.out.println(dateTimes3);
     }
 
     /**

@@ -29,15 +29,14 @@ public class SecureUtilTests {
         String username = "duijie";
         String passwd = "JZWSD@2024";
         String realm = "160F090CD90D1346";
-        String randomKey = "10693015102294080";
+        String randomKey = "10783704070883392";
         String passwdValue0 = SecureUtil.md5(passwd);
-        String passwdValue1 = SecureUtil.md5(StrUtil.format("{}:{}", username, passwdValue0));
+        String passwdValue1 = SecureUtil.md5(StrUtil.format("{}{}", username, passwdValue0));
         String passwdValue2 = SecureUtil.md5(passwdValue1);
-        String encryptedPasswd = SecureUtil.md5(StrUtil.format("{}:{}:{}",username,realm, passwdValue2));
+        String encryptedPasswd = SecureUtil.md5(StrUtil.format("{}:{}:{}", username, realm, passwdValue2));
         String signature = SecureUtil.md5(StrUtil.format("{}:{}", encryptedPasswd, randomKey));
         System.out.println("signature=" + signature);
-        // ab0dbecc74a358acae075b4a3a37e920
-
+        // 266f9473da4167e87751a193a1f59f51
     }
 
     @Test
@@ -57,7 +56,7 @@ public class SecureUtilTests {
         String passwdValue0 = SecureUtil.md5(passwd);
         String passwdValue1 = SecureUtil.md5(StrUtil.format("{}{}", username, passwdValue0));
         String passwdValue2 = SecureUtil.md5(passwdValue1);
-        String encryptedPasswd = SecureUtil.md5(StrUtil.format("{}:{}:{}",username,realm, passwdValue2));
+        String encryptedPasswd = SecureUtil.md5(StrUtil.format("{}:{}:{}", username, realm, passwdValue2));
         String signature = SecureUtil.md5(StrUtil.format("{}:{}", encryptedPasswd, randomKey));
         System.out.println("signature=" + signature);
     }
