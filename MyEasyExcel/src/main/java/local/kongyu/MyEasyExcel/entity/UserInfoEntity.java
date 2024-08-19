@@ -1,5 +1,9 @@
 package local.kongyu.MyEasyExcel.entity;
 
+import com.alibaba.excel.annotation.format.DateTimeFormat;
+import com.alibaba.excel.annotation.write.style.ColumnWidth;
+import com.alibaba.excel.annotation.write.style.ContentRowHeight;
+import com.alibaba.excel.annotation.write.style.HeadRowHeight;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -18,6 +22,9 @@ import java.util.Date;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@ContentRowHeight(20)
+@HeadRowHeight(25)
+@ColumnWidth(15)
 public class UserInfoEntity {
 
     /**
@@ -45,6 +52,8 @@ public class UserInfoEntity {
      * 用户生日
      * 注意：这里使用Date类型，表示用户的生日。
      */
+    @DateTimeFormat("yyyy年MM月dd日 HH时mm分ss秒")
+    @ColumnWidth(50)
     private Date birthday;
 
     /**
