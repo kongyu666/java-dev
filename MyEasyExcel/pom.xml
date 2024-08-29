@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <!-- 项目模型版本 -->
     <modelVersion>4.0.0</modelVersion>
@@ -22,7 +22,7 @@
         <fastjson2.version>2.0.45</fastjson2.version>
         <hutool.version>5.8.25</hutool.version>
         <poi.version>5.2.5</poi.version>
-        <easyexcel.version>3.3.3</easyexcel.version>
+        <easyexcel.version>4.0.2</easyexcel.version>
     </properties>
 
     <!-- 项目依赖 -->
